@@ -11,9 +11,9 @@ class Intern extends Employee {
         return this.school;
     }
 
-    InternRole(){
+    TeamRole(){
         return "Intern"
-    }
+    };
 }
 
 module.exports = Intern;

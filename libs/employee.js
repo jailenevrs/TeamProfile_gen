@@ -17,6 +17,9 @@ return this.id;
 employeeEmail () {
     return this.email;
 }
+TeamRole(){
+    return "Employee"
+}
 
 }
 

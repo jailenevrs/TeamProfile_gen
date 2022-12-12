@@ -21,11 +21,11 @@ const generateManager =  function(manager){
 
 `<div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <h5 class="card-title">${manager.name}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Manager</h6>
+    <p class="card-text"> ID:${manager.id}</p>
+    <p class="card-text"> ID:${manager.officenumber}</p>
+    <a href="#" class="card-link">${manager.email}</a>
   </div>
 </div>`
 
@@ -36,11 +36,11 @@ const generateManager =  function(manager){
 const generateEnginer = function(Engineer){
     `<div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <h5 class="card-title">${Engineer.name}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
+    <p class="card-text"> ID:${Engineer.id}</p>
+    <a href="#" class="card-link">${Engineer.email}</a>
+    <a href="#" class="card-link">${Engineer.github}</a>
   </div>
 </div>`
 }
@@ -48,11 +48,12 @@ const generateEnginer = function(Engineer){
 const generateIntern = function (Intern) {
    ` <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <h5 class="card-title">${Intern.name}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
+    <p class="card-text">ID:${Intern.id}</p>
+    <p class="card-text">ID:${Intern.school}</p>
+    <a href="#" class="card-link">${Intern.email}</a>
+    
   </div>
 </div>`
 }
