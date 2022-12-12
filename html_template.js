@@ -56,3 +56,7 @@ const generateIntern = function (Intern) {
   </div>
 </div>`
 }
+
+
+//Export to index
+module.exports = Html;

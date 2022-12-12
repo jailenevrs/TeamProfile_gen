@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { type } = require("os");
+const html = require("./html_template");
 
 //adding manager 
 const manager = inquirer.prompt([
