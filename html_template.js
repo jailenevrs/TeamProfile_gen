@@ -60,4 +60,4 @@ const generateIntern = function (Intern) {
 
 
 //Export to index
-module.exports = Html;
+module.exports = {generateEnginer,generateIntern,generateManager,generateHTML};
