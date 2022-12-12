@@ -1,18 +1,6 @@
-const inquirer=require("inquirer");
+const inquirer = require("inquirer");
 const fs = require("fs");
 
-//function to create HTML file
-//function makeHTML() {
-    //return new promise ((resolve,reject) =>{
-//fs.writeFile('index.html',data,err => {
-   // if (err){
-        //reject (err)
-   //// } resolve (data)
-   
-//})
-    //});
-
-//An array of questions for user input
 const questions = [
     {
         name:"Name",
@@ -37,11 +25,12 @@ const questions = [
 
     },
 
+]
     
-    
+    //writing index.html
 
     function init() {
-        inquirer.prompt(questions)// TODO: Create a function to write README file
+        inquirer.prompt(questions)
         .then(response=>{
             fs.writeFile("index.html",(response),
             error=>{
@@ -50,7 +39,5 @@ const questions = [
                 } else (console.log("response saved succesfully!"))
             });
         });
-    }
-    
-    // Function call to initialize app
-    init();
+ }
+ 
