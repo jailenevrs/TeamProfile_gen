@@ -181,7 +181,7 @@ if(answers.TeamMem==="Engineer")
     //writing index.html
 
     function generateHTML(team) {
-           //fs.writeFile("index.html",(template(team)),"utf-8")
+           fs.writeFile("index.html",(template(employeeArray)),"utf-8")
         console.log("succesfully wrote to html!!")
         };
 
